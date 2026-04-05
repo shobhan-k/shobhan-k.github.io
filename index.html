@@ -1,120 +1,183 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Shobhan Karmakar | Principal QA Engineer</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shobhan Karmakar | Principal QA Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
+*{margin:0;padding:0;box-sizing:border-box}
 body{
-font-family: Arial;
-margin:0;
+font-family:Poppins;
 background:#0f172a;
 color:white;
+scroll-behavior:smooth;
 }
 
+/* NAVBAR */
+nav{
+position:fixed;
+width:100%;
+background:#020617;
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+z-index:1000;
+}
+nav a{color:white;margin-left:20px;text-decoration:none;font-weight:500}
+
+/* HERO */
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:60px;
+color:#38bdf8;
+animation:fadeIn 1.5s ease-in-out;
+}
+
+.hero h2{
+margin-top:15px;
+font-weight:300;
+animation:fadeIn 2s ease-in-out;
+}
+
+.btn{
+margin-top:30px;
+padding:12px 25px;
+background:#38bdf8;
+color:black;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+.btn:hover{transform:scale(1.1)}
+
+/* SECTION */
 .section{
-padding:60px 20px;
-max-width:1000px;
-margin:auto;
+padding:80px 10%;
+}
+.section h2{
+color:#38bdf8;
+margin-bottom:30px;
 }
 
-h1,h2{color:#38bdf8;}
+/* SKILLS */
+.skills span{
+display:inline-block;
+background:#1e293b;
+padding:10px 20px;
+margin:10px;
+border-radius:20px;
+}
 
+/* CARDS */
 .card{
 background:#1e293b;
-padding:20px;
+padding:25px;
 margin:15px 0;
-border-radius:12px;
+border-radius:15px;
+transition:0.3s;
+}
+.card:hover{transform:translateY(-8px)}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:30px;
+background:#020617;
 }
 
-a{color:#38bdf8;text-decoration:none;}
+/* ANIMATION */
+@keyframes fadeIn{
+from{opacity:0;transform:translateY(30px)}
+to{opacity:1}
+}
 </style>
 </head>
 
 <body>
 
-<div class="section">
+<nav>
+<div><b>Shobhan</b></div>
+<div>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<section class="hero">
 <h1>Shobhan Karmakar</h1>
-<h3>Principal QA Engineer | Automation | Performance | AI Testing</h3>
+<h2>Principal QA Engineer | Automation | Performance | AI Testing</h2>
+<a class="btn" href="mailto:shobhankarmakar55@gmail.com">Hire Me</a>
+</section>
+
+<section id="about" class="section">
+<h2>About Me</h2>
 <p>
-Full-stack QA engineer with 9+ years experience in Automation, Performance,
-Database & AI platform testing. Experienced in building scalable frameworks
-and leading QA initiatives.
+Principal QA Engineer with 9+ years of experience in Automation, Performance,
+Database and AI platform testing. I specialize in building scalable automation
+frameworks and leading QA initiatives for high-quality product delivery.
 </p>
+</section>
 
-<p>
-📍 Kolkata, India <br>
-📧 shobhankarmakar55@gmail.com <br>
-🔗 <a href="https://in.linkedin.com/in/shobhan-karmakar-588800133">LinkedIn</a>
-</p>
+<section id="skills" class="section">
+<h2>Skills</h2>
+<div class="skills">
+<span>Java</span>
+<span>Selenium</span>
+<span>JMeter</span>
+<span>k6</span>
+<span>Postman</span>
+<span>MySQL</span>
+<span>JavaScript</span>
+<span>CI/CD</span>
+<span>Docker</span>
+<span>Jenkins</span>
 </div>
+</section>
 
-<div class="section">
-<h2>🚀 Skills</h2>
-<div class="card">
-Java • Selenium • JMeter • k6 • Postman • MySQL • JavaScript • Automation • Performance Testing
-</div>
-</div>
-
-<div class="section">
-<h2>🛠 Tools & Tech</h2>
-<div class="card">
-Jira • TestRail • Jenkins • Azure DevOps • Docker • Maven • Git • Bitbucket • Kibana • Salesforce
-</div>
-</div>
-
-<div class="section">
-<h2>💼 Professional Experience</h2>
+<section id="projects" class="section">
+<h2>Key Projects</h2>
 
 <div class="card">
-<h3>Principal QA Engineer – AI Annotation Platforms</h3>
-<ul>
-<li>Led QA for Computer Vision & Point Cloud annotation tools</li>
-<li>Designed performance testing strategy for scalable systems</li>
-<li>Mentored QA team & established automation best practices</li>
-</ul>
+<h3>AI Annotation Platform Testing</h3>
+<p>Led QA for Computer Vision & Point Cloud tools. Designed performance testing strategy and improved scalability.</p>
 </div>
 
 <div class="card">
-<h3>Automation Engineer – Salesforce CPQ</h3>
-<ul>
-<li>Automated Salesforce Lightning using Selenium + TestNG</li>
-<li>Integrated CI pipelines with Jenkins</li>
-</ul>
+<h3>Salesforce CPQ Automation</h3>
+<p>Built Selenium + TestNG automation framework integrated with Jenkins CI/CD.</p>
 </div>
 
 <div class="card">
-<h3>QA Engineer – Telecom Web & Mobile Apps</h3>
-<ul>
-<li>Automated Android & iOS apps using Selenium & Appium</li>
-<li>Implemented CI/CD automation testing</li>
-</ul>
+<h3>Telecom Mobile Automation</h3>
+<p>Automated Android & iOS applications using Selenium & Appium.</p>
 </div>
 
-</div>
+</section>
 
-<div class="section">
-<h2>🏆 Achievements</h2>
-<div class="card">
-State Gold & Bronze Medalist in Archery<br>
-District Bronze Medalist in Archery
-</div>
-</div>
+<section id="contact" class="section">
+<h2>Contact</h2>
+<p>Email: shobhankarmakar55@gmail.com</p>
+<p><a class="btn" href="https://in.linkedin.com/in/shobhan-karmakar-588800133">LinkedIn Profile</a></p>
+</section>
 
-<div class="section">
-<h2>📜 Certification</h2>
-<div class="card">
-Perfecto Mobile Automation Tool – Certified Tester
-</div>
-</div>
-
-<div class="section">
-<h2>📩 Contact Me</h2>
-<div class="card">
-<p>Open to Automation / Performance / AI QA Roles</p>
-<a href="mailto:shobhankarmakar55@gmail.com">Send Email</a>
-</div>
-</div>
+<footer>
+© 2026 Shobhan Karmakar
+</footer>
 
 </body>
 </html>
